@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "linkpacket"
+  },
+  "targets": {
+    "linkpacket": {
+      "hosting": {
+        "LinkPacket": [
+          "linkpacket"
+        ]
+      }
+    }
+  }
+}

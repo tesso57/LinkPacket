@@ -44,3 +44,21 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Firebase Hosting
+.firebase
+.firebaserc
+firebase-debug.log
+
+# Build generated
+build/
+DerivedData/
+
+# Local config/setup
+database.rules.json
+
+# Firebase cache
+.firebase/
+
+# dotenv environment variables file
+.env
