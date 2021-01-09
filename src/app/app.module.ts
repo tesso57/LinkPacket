@@ -10,12 +10,15 @@ import {firebaseConfig} from '../forFirebase/config';
 import { PageContainerComponent } from './components/styles/page-container/page-container.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { HeaderComponent } from './components/styles/header/header.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    PageContainerComponent
-
+    PageContainerComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -24,6 +27,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AngularFirestoreModule,
     AngularFireAuthModule,
     BrowserAnimationsModule,
+    MatToolbarModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
