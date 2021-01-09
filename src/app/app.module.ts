@@ -7,10 +7,12 @@ import {AngularFireModule} from '@angular/fire';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
 import {AngularFireAuthModule} from '@angular/fire/auth';
 import {firebaseConfig} from '../forFirebase/config';
+import { PageContainerComponent } from './components/styles/page-container/page-container.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PageContainerComponent
   ],
   imports: [
     BrowserModule,
