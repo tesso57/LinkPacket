@@ -12,13 +12,15 @@ import { PageContainerComponent } from './components/styles/page-container/page-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { HeaderComponent } from './components/styles/header/header.component';
+import { FooterComponent } from './components/styles/footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PageContainerComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
