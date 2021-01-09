@@ -9,14 +9,14 @@ import {AngularFirestoreModule} from '@angular/fire/firestore';
 import {AngularFireAuthModule} from '@angular/fire/auth';
 import {firebaseConfig} from '../forFirebase/config';
 import { PageContainerComponent } from './components/styles/page-container/page-container.component';
-import { HeaderComponent } from './components/styles/header/header.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageContainerComponent
-    HeaderComponent
+
   ],
   imports: [
     BrowserModule,
