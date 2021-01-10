@@ -6,7 +6,7 @@ import {Observable, of} from 'rxjs';
 import {User} from '../../models/user';
 import {switchMap} from 'rxjs/operators';
 // @ts-ignore
-import {auth} from 'firebase';
+import firebase from 'firebase/app';
 
 @Injectable({
   providedIn: 'root'
@@ -33,7 +33,7 @@ export class AuthService {
   }
 
   async googleSignin(): Promise<void> {
-    const provider = new auth.GoogleAuthProvider();
+    const provider = new firebase.auth.GoogleAuthProvider();
     const credential = await this.afAuth.signInWithPopup(provider);
     return this.updateUserData(credential.user);
   }
