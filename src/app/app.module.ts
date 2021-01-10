@@ -10,9 +10,11 @@ import { firebaseConfig } from '../forFirebase/config';
 import { PageContainerComponent } from './components/styles/page-container/page-container.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
 import { HeaderComponent } from './components/styles/header/header.component';
 import { FooterComponent } from './components/styles/footer/footer.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { LoginComponent } from './pages/login/login.component';
 
 
 
@@ -22,7 +24,8 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     PageContainerComponent,
     HeaderComponent,
     PageNotFoundComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +35,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     AngularFireAuthModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
