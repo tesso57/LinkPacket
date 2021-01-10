@@ -1,8 +1,9 @@
-<ng-container *ngFor="let card of cards">
+<section class="container">
   <app-card
     [title] = card.title
     [description] = card.description
     [url] = card.url
+    *ngFor="let card of cards"
   >
   </app-card>
-</ng-container>
+</section>
