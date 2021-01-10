@@ -8,11 +8,12 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { firebaseConfig } from '../forFirebase/config';
 import { PageContainerComponent } from './components/styles/page-container/page-container.component';
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 import { HeaderComponent } from './components/styles/header/header.component';
 import { FooterComponent } from './components/styles/footer/footer.component';
@@ -43,7 +44,8 @@ import { CardlistComponent } from './components/packetGalley/cardlist/cardlist.c
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
