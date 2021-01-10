@@ -1,0 +1,33 @@
+@import '/src/styles';
+
+.title-logo {
+  position: absolute;
+  left: calc(50% - 257.5px);
+  top: 333px;
+  width: 515px;
+  height: 91px;
+}
+
+.signin-button {
+  position: absolute;
+  left: calc(50% - 132px);
+  top: 661px;
+  width: 264px;
+  height: 56px;
+  background: $color-primary;
+  color: white;
+  font-size: large;
+  border-radius: 28px;
+}
+
+.see-list-button {
+  position: absolute;
+  left: calc(50% - 132px);
+  top: 757px;
+  width: 264px;
+  height: 56px;
+  background: $color-primary;
+  color: white;
+  font-size: large;
+  border-radius: 28px;
+}
