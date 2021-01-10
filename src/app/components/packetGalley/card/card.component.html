@@ -1,0 +1,17 @@
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title>{{title}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src]="img" class="ogp-img" alt="ogp image"/>
+  <button mat-icon-button class="share-icon"  >
+    <a [attr.href]="url">
+      <mat-icon  aria-label="share">share</mat-icon>
+    </a>
+  </button>
+  <!-- imgは仮実装 -->
+  <mat-card-content class="content">
+    <p>
+      {{description}}
+    </p>
+  </mat-card-content>
+</mat-card>
