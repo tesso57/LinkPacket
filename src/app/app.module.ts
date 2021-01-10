@@ -15,12 +15,13 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 
-import { HeaderComponent } from './components/styles/header/header.component';
-import { FooterComponent } from './components/styles/footer/footer.component';
-import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { PacketGalleyComponent } from './pages/packet-galley/packet-galley.component';
 import { CardComponent } from './components/packetGalley/card/card.component';
 import { CardlistComponent } from './components/packetGalley/cardlist/cardlist.component';
+import { HeaderComponent } from './components/styles/header/header.component';
+import { FooterComponent } from './components/styles/footer/footer.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { LoginComponent } from './pages/login/login.component';
 
 
 
@@ -34,6 +35,7 @@ import { CardlistComponent } from './components/packetGalley/cardlist/cardlist.c
     PacketGalleyComponent,
     CardComponent,
     CardlistComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

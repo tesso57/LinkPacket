@@ -1,0 +1,33 @@
+@import '/src/styles';
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title-logo {
+    margin: 20.8125rem 0 auto;
+    width: 32.1875rem;
+    height: 5.6875rem;
+  }
+
+  .signin-button {
+    margin: 14.8125rem 0 auto;
+    width: 16.5rem;
+    height: 3.5rem;
+    background: $color-primary;
+    color: white;
+    font-size: large;
+    border-radius: 1.75rem;
+  }
+
+  .see-list-button {
+    margin: 2.5rem 0 auto;
+    width: 16.5rem;
+    height: 3.5rem;
+    background: $color-primary;
+    color: white;
+    font-size: large;
+    border-radius: 1.75rem;
+  }
+}

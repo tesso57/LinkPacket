@@ -1,8 +1,8 @@
-<ng-container *ngFor="let bookmark of bookmarks">
+<ng-container *ngFor="let card of cards">
   <app-card
-    [title]='"hello"'
-    [description]='"this is test text"'
-    [url] = '"https://qiita.com/ksyunnnn/items/bfe2b9c568e97bb6b494"'
+    [title] = card.title
+    [description] = card.description
+    [url] = card.url
   >
   </app-card>
 </ng-container>
