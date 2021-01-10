@@ -18,7 +18,7 @@ export class CardComponent implements OnInit {
     this.getOGPImage(CORS_PROXY + this.url); // 'https://qiita.com/ksyunnnn/items/bfe2b9c568e97bb6b494' WIP
   }
 
-  private getOGPImage(url: string){
+  private getOGPImage(url: string): void {
     fetch(url)
     .then((res) => res.text())
     .then((text) => {
