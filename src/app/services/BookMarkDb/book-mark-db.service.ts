@@ -1,24 +1,23 @@
 import {Injectable} from '@angular/core';
-import {User} from '../../models/user';
 import {FunctionUrlService} from '../FunctionUrl/function-url.service';
 import {BookMark} from '../../models/book-mark';
-import {AngularFireFunctions} from '@angular/fire/functions';
 import {Observable} from 'rxjs';
+import {UserDbService} from '../UserDb/user-db.service';
+import {AngularFirestore, AngularFirestoreDocument} from '@angular/fire/firestore';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class BookMarkDbService {
-
   constructor(
     private functionUrlService: FunctionUrlService,
-    private aff: AngularFireFunctions
+    private userDbService: UserDbService,
+    private afs: AngularFirestore
   ) {
   }
 
-  getBookMarkFromUser(user: User): Observable<BookMark[]> {
-    const callable =  this.aff.httpsCallable(this.functionUrlService.getBookMarkFromUserId);
-    return  callable({text: user.uid});
+  getBookMarkValueChanges(bookMark: AngularFirestoreDocument<BookMark>): Observable<BookMark> {
+    return bookMark.valueChanges();
   }
 }

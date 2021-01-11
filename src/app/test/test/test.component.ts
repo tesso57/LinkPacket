@@ -8,6 +8,7 @@ import {User} from '../../models/user';
   styleUrls: ['./test.component.scss']
 })
 export class TestComponent implements OnInit {
+  text = 'aa';
 
   constructor(public bookMarkDbService: BookMarkDbService) {
   }
@@ -15,6 +16,8 @@ export class TestComponent implements OnInit {
   user: User = {
     uid: 'e0GzJEgM7l24O0gladS9'
   };
+
+
 
   ngOnInit(): void {
   }

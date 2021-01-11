@@ -7,7 +7,6 @@ import {Observable} from 'rxjs';
   providedIn: 'root'
 })
 export class UserDbService {
-
   constructor(private afs: AngularFirestore) {
   }
 

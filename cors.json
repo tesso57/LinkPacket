@@ -1,0 +1,6 @@
+[{
+  "origin": ["https://linkpacket.firebaseapp.com", "http://localhost:4200"],
+  "responseHeader": ["*"],
+  "method": ["GET"],
+  "maxAgeSeconds": 86400
+}]
