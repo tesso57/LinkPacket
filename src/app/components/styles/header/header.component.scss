@@ -14,4 +14,13 @@
     height: 3.0625rem;
     border: none;
   }
+  button {
+    margin: 0 0 0 auto;
+    width: 6.0625rem;
+    height: 2.25rem;
+    background: $color-primary;
+    color: white;
+    border: none;
+    border-radius: 1.125rem;
+  }
 }
