@@ -15,6 +15,8 @@ import { HeaderComponent } from './components/styles/header/header.component';
 import { FooterComponent } from './components/styles/footer/footer.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { LoginComponent } from './pages/login/login.component';
+import { TestComponent } from './test/test/test.component';
+import {AngularFireFunctionsModule} from '@angular/fire/functions';
 
 
 
@@ -25,7 +27,8 @@ import { LoginComponent } from './pages/login/login.component';
     HeaderComponent,
     PageNotFoundComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +39,7 @@ import { LoginComponent } from './pages/login/login.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
+    AngularFireFunctionsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
