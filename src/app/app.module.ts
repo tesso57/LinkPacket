@@ -22,7 +22,6 @@ import { HeaderComponent } from './components/styles/header/header.component';
 import { FooterComponent } from './components/styles/footer/footer.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { CreateComponent } from './pages/create/create.component';
-import { LogoutComponent } from './pages/logout/logout.component';
 import { UsersComponent } from './pages/users/users.component';
 import { PacketComponent } from './pages/packet/packet.component';
 import { EditComponent } from './pages/edit/edit.component';
@@ -40,7 +39,6 @@ import { EditComponent } from './pages/edit/edit.component';
     CardComponent,
     CardlistComponent,
     CreateComponent,
-    LogoutComponent,
     UsersComponent,
     PacketComponent,
     EditComponent
