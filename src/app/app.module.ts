@@ -21,7 +21,6 @@ import { CardlistComponent } from './components/packetGalley/cardlist/cardlist.c
 import { HeaderComponent } from './components/styles/header/header.component';
 import { FooterComponent } from './components/styles/footer/footer.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
-import { LoginComponent } from './pages/login/login.component';
 import { CreateComponent } from './pages/create/create.component';
 import { LogoutComponent } from './pages/logout/logout.component';
 import { UsersComponent } from './pages/users/users.component';
@@ -40,7 +39,6 @@ import { EditComponent } from './pages/edit/edit.component';
     PacketGalleyComponent,
     CardComponent,
     CardlistComponent,
-    LoginComponent,
     CreateComponent,
     LogoutComponent,
     UsersComponent,
