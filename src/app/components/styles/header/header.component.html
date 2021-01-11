@@ -1,3 +1,17 @@
-<mat-toolbar>
-  <img src="./assets/title.png" alt="title">
-</mat-toolbar>
+<div *ngIf="auth.user$ | async; then authenticated else guest;"></div>
+
+<ng-template #guest>
+  <mat-toolbar>
+    <img class="title" src="./assets/title.png" alt="title">
+    <button mat-flat-button (click)="auth.googleSignin()">SIGNIN</button>
+  </mat-toolbar>
+</ng-template>
+
+<ng-template #authenticated>
+  <div *ngIf="auth.user$ | async as user">
+    <mat-toolbar>
+      <img class="title" src="./assets/title.png" alt="title">
+      <img class="icon" [src]="user.photoURL" alt="user-icon">
+    </mat-toolbar>
+  </div>
+</ng-template>
