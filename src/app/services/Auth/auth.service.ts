@@ -44,7 +44,7 @@ export class AuthService {
 
     const data: User = {
       uid: user.uid,
-      bookMarks: user.bookMarks || null,
+      bookMarkRefs: user.bookMarkRefs || null,
       displayName: user.displayName || ''
     };
 

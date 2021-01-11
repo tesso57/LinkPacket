@@ -1,1 +1,2 @@
-<p></p>
+<p [textContent]="((bookMark| async).userRef.valueChanges() | async).displayName"></p>
+<button (click)="testButton()">test</button>

@@ -3,6 +3,6 @@ import {BookMark} from './book-mark';
 
 export interface Tag {
   uid: string;
-  bookMarks: AngularFirestoreDocument<BookMark>[];
+  bookMarkRefs: AngularFirestoreDocument<BookMark>[];
   name: string;
 }

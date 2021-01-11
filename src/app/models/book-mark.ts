@@ -4,6 +4,6 @@ import {Tag} from './tag';
 
 export interface BookMark {
   uid: string;
-  user: AngularFirestoreDocument<User>;
-  tags: AngularFirestoreDocument<Tag>[];
+  userRef: AngularFirestoreDocument<User>;
+  tagRefs: AngularFirestoreDocument<Tag>[];
 }
