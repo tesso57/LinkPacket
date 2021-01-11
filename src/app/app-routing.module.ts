@@ -10,7 +10,7 @@ import { UsersComponent } from './pages/users/users.component';
 import { EditComponent } from './pages/edit/edit.component';
 
 const routes: Routes = [
-  { path: '', component: PacketGalleyComponent}
+  { path: '', component: PacketGalleyComponent},
   { path: 'login', component: LoginComponent },
   { path: 'logout', component: LogoutComponent },
   { path: 'create', component: CreateComponent },
